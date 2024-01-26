@@ -14,6 +14,13 @@
 		C8BD98DD2B5EE749004A4311 /* iMoviesFlixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD98DC2B5EE749004A4311 /* iMoviesFlixTests.swift */; };
 		C8BD98E72B5EE749004A4311 /* iMoviesFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD98E62B5EE749004A4311 /* iMoviesFlixUITests.swift */; };
 		C8BD98E92B5EE749004A4311 /* iMoviesFlixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD98E82B5EE749004A4311 /* iMoviesFlixUITestsLaunchTests.swift */; };
+		C8D921012B62E7BF008776D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D921002B62E7BF008776D9 /* HomeView.swift */; };
+		C8D921032B62E7D8008776D9 /* MyMovieLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D921022B62E7D8008776D9 /* MyMovieLists.swift */; };
+		C8D921052B62E7EB008776D9 /* SearchMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D921042B62E7EB008776D9 /* SearchMovies.swift */; };
+		C8D921072B62E7FD008776D9 /* ProfileSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D921062B62E7FD008776D9 /* ProfileSectionView.swift */; };
+		C8D9210A2B62EF47008776D9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D921092B62EF47008776D9 /* NetworkManager.swift */; };
+		C8D9210C2B62F25D008776D9 /* HomeMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9210B2B62F25D008776D9 /* HomeMoviesView.swift */; };
+		C8D921102B62F6CE008776D9 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9210F2B62F6CE008776D9 /* MoviesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		C8BD98E22B5EE749004A4311 /* iMoviesFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMoviesFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BD98E62B5EE749004A4311 /* iMoviesFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMoviesFlixUITests.swift; sourceTree = "<group>"; };
 		C8BD98E82B5EE749004A4311 /* iMoviesFlixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMoviesFlixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8D921002B62E7BF008776D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C8D921022B62E7D8008776D9 /* MyMovieLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieLists.swift; sourceTree = "<group>"; };
+		C8D921042B62E7EB008776D9 /* SearchMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovies.swift; sourceTree = "<group>"; };
+		C8D921062B62E7FD008776D9 /* ProfileSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSectionView.swift; sourceTree = "<group>"; };
+		C8D921092B62EF47008776D9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C8D9210B2B62F25D008776D9 /* HomeMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMoviesView.swift; sourceTree = "<group>"; };
+		C8D9210F2B62F6CE008776D9 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +108,17 @@
 		C8BD98CA2B5EE747004A4311 /* iMoviesFlix */ = {
 			isa = PBXGroup;
 			children = (
+				C8D921122B633F55008776D9 /* Resources */,
+				C8D921112B633F4B008776D9 /* Managers */,
+				C8D921082B62EF32008776D9 /* Extensions */,
+				C8D920FF2B62E6EF008776D9 /* ViewModels */,
+				C8D920FE2B62E6DE008776D9 /* Models */,
+				C8D920FD2B62E6D4008776D9 /* View */,
 				C8BD98CB2B5EE747004A4311 /* iMoviesFlixApp.swift */,
 				C8BD98CD2B5EE747004A4311 /* ContentView.swift */,
 				C8BD98CF2B5EE749004A4311 /* Assets.xcassets */,
 				C8BD98D12B5EE749004A4311 /* Preview Content */,
+				C8D921092B62EF47008776D9 /* NetworkManager.swift */,
 			);
 			path = iMoviesFlix;
 			sourceTree = "<group>";
@@ -125,6 +146,54 @@
 				C8BD98E82B5EE749004A4311 /* iMoviesFlixUITestsLaunchTests.swift */,
 			);
 			path = iMoviesFlixUITests;
+			sourceTree = "<group>";
+		};
+		C8D920FD2B62E6D4008776D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8D921002B62E7BF008776D9 /* HomeView.swift */,
+				C8D921022B62E7D8008776D9 /* MyMovieLists.swift */,
+				C8D921042B62E7EB008776D9 /* SearchMovies.swift */,
+				C8D921062B62E7FD008776D9 /* ProfileSectionView.swift */,
+				C8D9210B2B62F25D008776D9 /* HomeMoviesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8D920FE2B62E6DE008776D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8D9210F2B62F6CE008776D9 /* MoviesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8D920FF2B62E6EF008776D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C8D921082B62EF32008776D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C8D921112B633F4B008776D9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C8D921122B633F55008776D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8D921072B62E7FD008776D9 /* ProfileSectionView.swift in Sources */,
+				C8D921012B62E7BF008776D9 /* HomeView.swift in Sources */,
+				C8D921102B62F6CE008776D9 /* MoviesModel.swift in Sources */,
 				C8BD98CE2B5EE747004A4311 /* ContentView.swift in Sources */,
+				C8D9210A2B62EF47008776D9 /* NetworkManager.swift in Sources */,
+				C8D921032B62E7D8008776D9 /* MyMovieLists.swift in Sources */,
+				C8D9210C2B62F25D008776D9 /* HomeMoviesView.swift in Sources */,
+				C8D921052B62E7EB008776D9 /* SearchMovies.swift in Sources */,
 				C8BD98CC2B5EE747004A4311 /* iMoviesFlixApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +506,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +536,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
