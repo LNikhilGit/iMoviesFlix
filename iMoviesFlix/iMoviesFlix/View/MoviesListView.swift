@@ -9,35 +9,34 @@ import SwiftUI
 
 
 struct MoviesListView: View {
-   // @ObservedObject var viewModel = HomeviewViewModel()
+    // @ObservedObject var viewModel = HomeviewViewModel()
     @State var isMovieSelected = false
     var movies: [Movie]
     var body: some View {
-                ScrollView(.horizontal) {
-                    // HStack
-                    LazyHGrid(rows: [GridItem(.adaptive(minimum: 200))]){
-                        // Loop
-                        // or
-                        // Lazy GridView or ListView
-                        ForEach(movies){ movie in
-                            
-                            NavigationLink {
-                                SelectedMovieView(movie: movie)
-                            } label: {
-                                MovieCardView(movie: movie)
-                            }
-//                                   MovieCardView(movie: movie) .onTapGesture {
-//                                        isMovieSelected.toggle()
-//                                    }
-//                                   .fullScreenCover(isPresented: $isMovieSelected, content: {
-//                                       SelectedMovieView(movie: movie)
-//                                   })
-                            }
-                        }//: End Loop
-                    }//: End HStack
-                //} //: End ScrollView
-            }//: End Navigation
+        //ScrollView
+        ScrollView(.horizontal) {
+            // LazyHGrid
+            LazyHGrid(rows: [GridItem(.adaptive(minimum: 200))]){
+                // Loop
+                ForEach(movies){ movie in
+                    
+                    //Navigation Destination
+                    NavigationLink {
+                        SelectedMovieView(movie: movie)
+                    } label: {
+                        MovieCardView(movie: movie)
+                    } //: END Navigation label and DEstination
+                    //                                   MovieCardView(movie: movie) .onTapGesture {
+                    //                                        isMovieSelected.toggle()
+                    //                                    }
+                    //                                   .fullScreenCover(isPresented: $isMovieSelected, content: {
+                    //                                       SelectedMovieView(movie: movie)
+                    //                                   })
+                }// End Loop
+            }//: End LazyHGrid
+        }//: End ScrollView
     }
+}
 
 
 #Preview{

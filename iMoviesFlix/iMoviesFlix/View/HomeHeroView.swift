@@ -13,9 +13,11 @@ struct HomeHeroView: View {
         TabView{
             // Loop
             ForEach(0..<3){ _ in
+                //Image
                 Image("Dune")
                     .resizable()
                     .scaledToFill()
+                //: Image
             } //: End Loop
         }//: END  TabView
         .tabViewStyle(PageTabViewStyle())
