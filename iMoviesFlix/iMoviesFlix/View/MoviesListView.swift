@@ -13,12 +13,9 @@ struct MoviesListView: View {
     @State var isMovieSelected = false
     var movies: [Movie]
     var body: some View {
-            // Navigation
-            NavigationView {
-                // ScrollView
                 ScrollView(.horizontal) {
                     // HStack
-                    HStack{
+                    LazyHGrid(rows: [GridItem(.adaptive(minimum: 200))]){
                         // Loop
                         // or
                         // Lazy GridView or ListView
@@ -29,19 +26,19 @@ struct MoviesListView: View {
                             } label: {
                                 MovieCardView(movie: movie)
                             }
-//                                    .onTapGesture {
+//                                   MovieCardView(movie: movie) .onTapGesture {
 //                                        isMovieSelected.toggle()
 //                                    }
-//                            }
-//                            .fullScreenCover(isPresented: $isMovieSelected, content: {
-//                                SelectedMovieView(movie: movie)
-//                            })
+//                                   .fullScreenCover(isPresented: $isMovieSelected, content: {
+//                                       SelectedMovieView(movie: movie)
+//                                   })
+                            }
                         }//: End Loop
                     }//: End HStack
-                } //: End ScrollView
+                //} //: End ScrollView
             }//: End Navigation
     }
-}
+
 
 #Preview{
     MoviesListView(movies: [mockMovie])

@@ -8,26 +8,35 @@
 import SwiftUI
 
 struct SelectedMovieView: View {
-    
-    @State var movie: Movie
+    @Environment(\.presentationMode) var presentationMode
+@State var movie: Movie
     
     var body: some View {
         
         ScrollView(.vertical) {
             VStack(alignment: .leading){
-                VStack{
-                    // Image path: https://image.tmdb.org/t/p/w500"
-                    var imageURL = "https://image.tmdb.org/t/p/w500\(movie.posterPath)"
-                    if let url = URL(string: imageURL){
-                        AsyncImage(url: url) { image in
-                            image
-                                .resizable()
-                                .scaledToFill()
-                        } placeholder: {
-                            ProgressView()
+                    VStack{
+                        // Image path: https://image.tmdb.org/t/p/w500"
+                        var imageURL = "https://image.tmdb.org/t/p/w500\(movie.posterPath)"
+                        if let url = URL(string: imageURL){
+                            AsyncImage(url: url) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                            } placeholder: {
+                                ProgressView()
+                            }
                         }
                     }
-                }
+                    VStack{
+                        Button{
+                            presentationMode.wrappedValue.dismiss()
+                        } label: {
+                            Image(systemName: "delete.left")
+                                .tint(Color.red)
+                                .font(.title2)
+                        }
+                    }
                 VStack(alignment: .leading){
                     // Icon
                     HStack{

@@ -12,7 +12,9 @@ struct MovieCardView: View {
     @State var movie: Movie
     
     var body: some View {
+        // HStack
             HStack {
+                // VStack
                 VStack{
                     // Image path: https://image.tmdb.org/t/p/w500"
                     var imageURL = "https://image.tmdb.org/t/p/w500\(movie.posterPath)"
@@ -27,15 +29,9 @@ struct MovieCardView: View {
                             ProgressView()
                         }
                     }
-    //                Image(movie.)
-    //                    .resizable()
-    //                    .scaledToFill()
-    //                    .frame(height: 100)
-    //                    .padding()
-                    //: End Image
-                    
-                }.cornerRadius(8)
-        }
+                }//: End VStack
+                .cornerRadius(8)
+        }//: End HStack
     }
 }
 
