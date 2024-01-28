@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MoviesListView: View {
    // @ObservedObject var viewModel = HomeviewViewModel()
-    
+    @State var isMovieSelected = false
     var movies: [Movie]
     var body: some View {
             // Navigation
@@ -23,9 +23,21 @@ struct MoviesListView: View {
                         // or
                         // Lazy GridView or ListView
                         ForEach(movies){ movie in
-                            MovieCardView(movie: movie)
+                            
+                            NavigationLink {
+                                SelectedMovieView(movie: movie)
+                            } label: {
+                                MovieCardView(movie: movie)
+                            }
+//                                    .onTapGesture {
+//                                        isMovieSelected.toggle()
+//                                    }
+//                            }
+//                            .fullScreenCover(isPresented: $isMovieSelected, content: {
+//                                SelectedMovieView(movie: movie)
+//                            })
                         }//: End Loop
-                    }//: End HStac
+                    }//: End HStack
                 } //: End ScrollView
             }//: End Navigation
     }

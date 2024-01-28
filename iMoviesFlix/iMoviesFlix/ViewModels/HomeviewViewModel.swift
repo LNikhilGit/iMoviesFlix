@@ -9,13 +9,35 @@ import Foundation
 
 class HomeviewViewModel: ObservableObject{
     
-    @Published var movie: [Movie] = []
-    //@pub
-    //@pub trendin
+    @Published var popularMovies: [Movie] = []
+    @Published var upcomingMovies: [Movie] = []
+    @Published var topRatedMovies: [Movie] = []
     
-    func getTrendingData(){
+    func getPopularMovieData(){
         
         ApiCaller.shared.getPopularMovies { [weak self]
+            results in
+            guard let self = self else{
+                return
+            }
+            DispatchQueue.main.async {
+                switch results{
+                case .success(let movies):
+                    //print(movies)
+                    self.popularMovies = movies
+                   // print(movie)
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }
+    
+    // Upcoming Movies function call
+    
+    func getUpcomingMovieData(){
+        
+        ApiCaller.shared.getUpcomingMovies { [weak self]
             results in
             guard let self = self else{
                 return
@@ -24,8 +46,28 @@ class HomeviewViewModel: ObservableObject{
             switch results{
             case .success(let movies):
                 //print(movies)
-                self.movie = movies
-                print(movie)
+                self.upcomingMovies = movies
+                //print(movie)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    // TopRated movies function call
+    func getTopRatedMovieData(){
+        
+        ApiCaller.shared.getTopRatedMovies { [weak self]
+            results in
+            guard let self = self else{
+                return
+            }
+
+            switch results{
+            case .success(let movies):
+                //print(movies)
+                self.topRatedMovies = movies
+               // print(movie)
             case .failure(let error):
                 print(error)
             }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C84880EE2B66143D00950E99 /* SelectedMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84880ED2B66143D00950E99 /* SelectedMovieView.swift */; };
 		C8BD98CC2B5EE747004A4311 /* iMoviesFlixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD98CB2B5EE747004A4311 /* iMoviesFlixApp.swift */; };
 		C8BD98CE2B5EE747004A4311 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BD98CD2B5EE747004A4311 /* ContentView.swift */; };
 		C8BD98D02B5EE749004A4311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BD98CF2B5EE749004A4311 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C84880ED2B66143D00950E99 /* SelectedMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedMovieView.swift; sourceTree = "<group>"; };
 		C8BD98C82B5EE747004A4311 /* iMoviesFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMoviesFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BD98CB2B5EE747004A4311 /* iMoviesFlixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMoviesFlixApp.swift; sourceTree = "<group>"; };
 		C8BD98CD2B5EE747004A4311 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				C8D9210B2B62F25D008776D9 /* MovieCardView.swift */,
 				C8D921152B642056008776D9 /* MoviesListView.swift */,
 				C8D921172B6425A3008776D9 /* HomeHeroView.swift */,
+				C84880ED2B66143D00950E99 /* SelectedMovieView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				C8D921032B62E7D8008776D9 /* MyMovieLists.swift in Sources */,
 				C8D9211C2B64A8E4008776D9 /* MockObjects.swift in Sources */,
 				C8D921182B6425A3008776D9 /* HomeHeroView.swift in Sources */,
+				C84880EE2B66143D00950E99 /* SelectedMovieView.swift in Sources */,
 				C8D9210C2B62F25D008776D9 /* MovieCardView.swift in Sources */,
 				C8D921052B62E7EB008776D9 /* SearchMovies.swift in Sources */,
 				C8BD98CC2B5EE747004A4311 /* iMoviesFlixApp.swift in Sources */,

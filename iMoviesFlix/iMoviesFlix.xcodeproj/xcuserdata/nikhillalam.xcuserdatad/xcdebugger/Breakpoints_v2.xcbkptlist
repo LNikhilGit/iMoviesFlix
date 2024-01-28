@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2735B352-65AA-4204-8499-3F08F1A67251"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iMoviesFlix/View/MoviesListView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "2735B352-65AA-4204-8499-3F08F1A67251 - b488513a25d41c35"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (iMoviesFlix.Movie) -&gt; iMoviesFlix.MovieCardView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;, Swift.Int, iMoviesFlix.MovieCardView&gt; in closure #1 () -&gt; SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;, Swift.Int, iMoviesFlix.MovieCardView&gt;&gt; in closure #1 () -&gt; SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;, Swift.Int, iMoviesFlix.MovieCardView&gt;&gt;&gt; in iMoviesFlix.MoviesListView.body.getter : some"
-                  moduleName = "iMoviesFlix"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/View/MoviesListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "628">
-               </Location>
-               <Location
-                  uuid = "2735B352-65AA-4204-8499-3F08F1A67251 - b488513a25d41c35"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (iMoviesFlix.Movie) -&gt; iMoviesFlix.MovieCardView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;, Swift.Int, iMoviesFlix.MovieCardView&gt; in closure #1 () -&gt; SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;, Swift.Int, iMoviesFlix.MovieCardView&gt;&gt; in closure #1 () -&gt; SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;, Swift.Int, iMoviesFlix.MovieCardView&gt;&gt;&gt; in iMoviesFlix.MoviesListView.body.getter : some"
-                  moduleName = "iMoviesFlix"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/View/MoviesListView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "108">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "06346245-676C-4932-A2B1-9EDE5B655B15"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -140,8 +92,8 @@
             filePath = "iMoviesFlix/View/MoviesListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -176,22 +128,6 @@
                   offsetFromSymbolStart = "628">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "166A3961-52D9-49DA-A5C3-F506C1B56742"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iMoviesFlix/ViewModels/HomeviewViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "getTrendingData()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -335,6 +271,141 @@
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "iMoviesFlix.HomeviewViewModel.$movie.modify : Combine.Published&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - cc96b8349f72ed27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of iMoviesFlix.HomeviewViewModel.popularMovies : Swift.Array&lt;iMoviesFlix.Movie&gt;"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/ViewModels/HomeviewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - c93c6267e71244a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iMoviesFlix.HomeviewViewModel.popularMovies.getter : Swift.Array&lt;iMoviesFlix.Movie&gt;"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/ViewModels/HomeviewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - 3bae5e95b5c43b48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iMoviesFlix.HomeviewViewModel.popularMovies.setter : Swift.Array&lt;iMoviesFlix.Movie&gt;"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/ViewModels/HomeviewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - 88cfa4902204e159"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iMoviesFlix.HomeviewViewModel.popularMovies.modify : Swift.Array&lt;iMoviesFlix.Movie&gt;"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/ViewModels/HomeviewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - fd2d21e095c40d17"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iMoviesFlix.HomeviewViewModel.popularMovies.modify : Swift.Array&lt;iMoviesFlix.Movie&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - d0e39b73422b86e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iMoviesFlix.HomeviewViewModel.$popularMovies.getter : Combine.Published&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;&gt;.Publisher"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/ViewModels/HomeviewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - 9ea6066e1425d093"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iMoviesFlix.HomeviewViewModel.$popularMovies.setter : Combine.Published&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;&gt;.Publisher"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - f7fc0465bc9686a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iMoviesFlix.HomeviewViewModel.$popularMovies.modify : Combine.Published&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;&gt;.Publisher"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - 40b18b690d5ba6c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iMoviesFlix.HomeviewViewModel.$popularMovies.modify : Combine.Published&lt;Swift.Array&lt;iMoviesFlix.Movie&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
                   moduleName = "iMoviesFlix"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/%3Ccompiler-generated%3E"

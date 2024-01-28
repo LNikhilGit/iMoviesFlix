@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
    @ObservedObject var viewModel = HomeviewViewModel()
+    @State var isMovieSelected = false
     
     //@State var movies: [Movie] = []
     
@@ -17,47 +18,65 @@ struct HomeView: View {
         ScrollView(.vertical){
             VStack{
                 // HeroView
-                HomeHeroView()
-                    .frame(height: 450)
+                VStack{
+                    HomeHeroView()
+                        .frame(height: 400)
+                }
                 
                 // Popular Movies
                 VStack(alignment: .leading) {
                     // Text
+                    Spacer()
                     Text("Popular Movies")
                         .font(.headline)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                         .foregroundColor(.red)
                     //: Text
-                    MoviesListView(movies: viewModel.movie)
-                }.frame(height: 200)
-                    .onAppear(perform: {
-                        viewModel.getTrendingData()
-                    })
-                 
+                    MoviesListView(movies: viewModel.popularMovies)
+                    Spacer()
+                }
+                .frame(height: 200)
+                .onAppear(perform: {
+                    viewModel.getPopularMovieData()
+                })
+                
                 
                 // Upcoming movies
                 VStack(alignment: .leading) {
+                    
+                    Spacer()
                     // Text
                     Text("Upcoming Movies")
                         .font(.headline)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                         .foregroundColor(.red)
                     //: Text
-                    MoviesListView(movies: viewModel.movie)
-                }.frame(height: 200)
-                    
+                    MoviesListView(movies: viewModel.upcomingMovies)
+                    Spacer()
+                }
+                .frame(height: 200)
+                .onAppear(perform: {
+                    viewModel.getUpcomingMovieData()
+                })
+                
                 
                 // Trending Movies
                 VStack(alignment: .leading) {
+                    
+                    Spacer()
                     // Text
                     Text("Trending Movies")
                         .font(.headline)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                         .foregroundColor(.red)
                     //: Text
-                    MoviesListView(movies: viewModel.movie)
-                }.frame(height: 200)
-                Spacer()
+                    MoviesListView(movies: viewModel.topRatedMovies)
+                    Spacer()
+                }
+                .frame(height: 200)
+                .onAppear(perform: {
+                    viewModel.getTopRatedMovieData()
+                })
             }
         }
     }

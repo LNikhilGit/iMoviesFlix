@@ -29,7 +29,7 @@ class ApiCaller{
             // url = https://api.themoviedb.org/3/movie/popular?language=en-US&page=1
     func getPopularMovies(completion: @escaping (Result<[Movie], Error>) -> Void){
 
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1")! as URL,
                                                 cachePolicy: .useProtocolCachePolicy,
                                             timeoutInterval: 10.0)
         request.httpMethod = "GET"
@@ -37,12 +37,7 @@ class ApiCaller{
 
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-//          if (error != nil) {
-//            print(error as Any)
-//          } else {
-//            let httpResponse = response as? HTTPURLResponse
-//            print(data)
-//          }
+
             
             guard let data = data, error == nil else{
                 return
@@ -61,9 +56,65 @@ class ApiCaller{
     }
         
         // upcoming movies
-            //url = https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1
+    //url = https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1
+    
+    func getUpcomingMovies(completion: @escaping (Result<[Movie], Error>) -> Void){
+
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1")! as URL,
+                                                cachePolicy: .useProtocolCachePolicy,
+                                            timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = Constants.headers
+
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+
+            
+            guard let data = data, error == nil else{
+                return
+            }
+            do{
+                let results = try JSONDecoder().decode(PopularMovies.self, from: data)
+                completion(.success(results.results))
+                
+            } catch{
+                completion(.failure(error))
+            }
+        })
+
+        dataTask.resume()
+        
+    }
         
         // Top Rated movies
-            // url = https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1
+    // url = https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1
+    func getTopRatedMovies(completion: @escaping (Result<[Movie], Error>) -> Void){
+
+        let request = NSMutableURLRequest(url: NSURL(string: "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1")! as URL,
+                                                cachePolicy: .useProtocolCachePolicy,
+                                            timeoutInterval: 10.0)
+        request.httpMethod = "GET"
+        request.allHTTPHeaderFields = Constants.headers
+
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+
+            
+            guard let data = data, error == nil else{
+                return
+            }
+            do{
+                let results = try JSONDecoder().decode(PopularMovies.self, from: data)
+                completion(.success(results.results))
+                
+            } catch{
+                completion(.failure(error))
+            }
+        })
+
+        dataTask.resume()
+        
+    }
+    
 }
 
