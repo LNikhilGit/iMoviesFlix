@@ -25,6 +25,7 @@
 		C8D921162B642056008776D9 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D921152B642056008776D9 /* MoviesListView.swift */; };
 		C8D921182B6425A3008776D9 /* HomeHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D921172B6425A3008776D9 /* HomeHeroView.swift */; };
 		C8D9211A2B64331B008776D9 /* HomeviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D921192B64331B008776D9 /* HomeviewViewModel.swift */; };
+		C8D9211C2B64A8E4008776D9 /* MockObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D9211B2B64A8E4008776D9 /* MockObjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		C8D921152B642056008776D9 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
 		C8D921172B6425A3008776D9 /* HomeHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeroView.swift; sourceTree = "<group>"; };
 		C8D921192B64331B008776D9 /* HomeviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeviewViewModel.swift; sourceTree = "<group>"; };
+		C8D9211B2B64A8E4008776D9 /* MockObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockObjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 		C8D921122B633F55008776D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C8D9211B2B64A8E4008776D9 /* MockObjects.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				C8D9210A2B62EF47008776D9 /* NetworkManager.swift in Sources */,
 				C8D921162B642056008776D9 /* MoviesListView.swift in Sources */,
 				C8D921032B62E7D8008776D9 /* MyMovieLists.swift in Sources */,
+				C8D9211C2B64A8E4008776D9 /* MockObjects.swift in Sources */,
 				C8D921182B6425A3008776D9 /* HomeHeroView.swift in Sources */,
 				C8D9210C2B62F25D008776D9 /* MovieCardView.swift in Sources */,
 				C8D921052B62E7EB008776D9 /* SearchMovies.swift in Sources */,

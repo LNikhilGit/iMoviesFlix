@@ -21,6 +21,8 @@ enum ApiError: Error{
 
 class ApiCaller{
     
+    // Call Generics 
+    
     static let shared = ApiCaller()
         
         // Popular movies

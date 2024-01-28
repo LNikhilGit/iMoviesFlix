@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct PopularMovies: Codable{
+struct PopularMovies: Codable, Equatable{
     let results: [Movie]
 }
 
-struct Movie: Codable{
+struct Movie: Codable, Identifiable, Equatable{
     let adult: Bool
        let backdropPath: String
        let genreIDS: [Int]

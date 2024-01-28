@@ -7,7 +7,11 @@
 
 import SwiftUI
 
+
 struct MoviesListView: View {
+   // @ObservedObject var viewModel = HomeviewViewModel()
+    
+    var movies: [Movie]
     var body: some View {
             // Navigation
             NavigationView {
@@ -16,17 +20,19 @@ struct MoviesListView: View {
                     // HStack
                     HStack{
                         // Loop
-                        ForEach(0..<10){_ in
-                            MovieCardView()
+                        // or
+                        // Lazy GridView or ListView
+                        ForEach(movies){ movie in
+                            MovieCardView(movie: movie)
                         }//: End Loop
-                    }//: End HStack
+                    }//: End HStac
                 } //: End ScrollView
             }//: End Navigation
     }
 }
 
-#Preview {
-    MoviesListView()
+#Preview{
+    MoviesListView(movies: [mockMovie])
         .previewLayout(.sizeThatFits)
         .frame(height: 200)
 }

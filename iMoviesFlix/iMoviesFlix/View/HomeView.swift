@@ -5,11 +5,13 @@
 //  Created by Nikhil Lalam on 1/25/24.
 //
 
-import SwiftUI
+import SwiftUI  
 
 struct HomeView: View {
     
-    var viewModel = HomeviewViewModel()
+   @ObservedObject var viewModel = HomeviewViewModel()
+    
+    //@State var movies: [Movie] = []
     
     var body: some View {
         ScrollView(.vertical){
@@ -26,7 +28,7 @@ struct HomeView: View {
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.red)
                     //: Text
-                    MoviesListView()
+                    MoviesListView(movies: viewModel.movie)
                 }.frame(height: 200)
                     .onAppear(perform: {
                         viewModel.getTrendingData()
@@ -41,7 +43,7 @@ struct HomeView: View {
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.red)
                     //: Text
-                    MoviesListView()
+                    MoviesListView(movies: viewModel.movie)
                 }.frame(height: 200)
                     
                 
@@ -53,7 +55,7 @@ struct HomeView: View {
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .foregroundColor(.red)
                     //: Text
-                    MoviesListView()
+                    MoviesListView(movies: viewModel.movie)
                 }.frame(height: 200)
                 Spacer()
             }
