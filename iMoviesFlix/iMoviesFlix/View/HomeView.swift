@@ -82,6 +82,25 @@ struct HomeView: View {
                     .onAppear(perform: {
                         viewModel.getTopRatedMovieData()
                     })
+                    
+                    // PopularPeopleList
+                    //VStack
+                    
+                    VStack(alignment: .leading){
+                        Spacer()
+                        
+                    // Text
+                        Text("Popular People")
+                            .font(.headline)
+                            .fontWeight(.bold)
+                            .foregroundColor(.red)
+                        PopularPeopleView(peoples: viewModel.popularPeopleList)
+                        Spacer()
+                    }
+                    .frame(height: 200)
+                    .onAppear(perform: {
+                        viewModel.getPopularPeopleList()
+                    })
                 } //END Vstack
         } // END ScrollView
     }

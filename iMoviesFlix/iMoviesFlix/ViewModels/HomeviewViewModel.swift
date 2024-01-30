@@ -12,6 +12,7 @@ class HomeviewViewModel: ObservableObject{
     @Published var popularMovies: [Movie] = []
     @Published var upcomingMovies: [Movie] = []
     @Published var topRatedMovies: [Movie] = []
+    @Published var popularPeopleList: [People] = []
     
     func getPopularMovieData(){
         
@@ -42,14 +43,16 @@ class HomeviewViewModel: ObservableObject{
             guard let self = self else{
                 return
             }
-
-            switch results{
-            case .success(let movies):
-                //print(movies)
-                self.upcomingMovies = movies
-                //print(movie)
-            case .failure(let error):
-                print(error)
+            DispatchQueue.main.async {
+                
+                switch results{
+                case .success(let movies):
+                    //print(movies)
+                    self.upcomingMovies = movies
+                    //print(movie)
+                case .failure(let error):
+                    print(error)
+                }
             }
         }
     }
@@ -62,15 +65,39 @@ class HomeviewViewModel: ObservableObject{
             guard let self = self else{
                 return
             }
-
-            switch results{
-            case .success(let movies):
-                //print(movies)
-                self.topRatedMovies = movies
-               // print(movie)
-            case .failure(let error):
-                print(error)
+            DispatchQueue.main.async {
+                
+                switch results{
+                case .success(let movies):
+                    //print(movies)
+                    self.topRatedMovies = movies
+                   // print(movie)
+                case .failure(let error):
+                    print(error)
+                }
             }
+        }
+    }
+    // PopularPeopleList
+    
+    func getPopularPeopleList(){
+        ApiCaller.shared.getPopularPeopleList{
+            [weak self]
+            results in
+            guard let self = self else{
+                return
+            }
+            DispatchQueue.main.async {
+                
+                switch results{
+                case .success(let peoples):
+                    print(peoples)
+                    self.popularPeopleList = peoples
+                case .failure(let error):
+                    print(error)
+                }
+            }
+            
         }
     }
 }

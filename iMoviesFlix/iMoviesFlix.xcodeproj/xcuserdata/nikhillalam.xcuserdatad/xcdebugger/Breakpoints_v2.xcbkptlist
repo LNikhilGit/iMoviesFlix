@@ -134,7 +134,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iMoviesFlix/ViewModels/HomeviewViewModel.swift"
@@ -414,6 +414,102 @@
                   startingLineNumber = "0"
                   endingLineNumber = "0"
                   offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE2D267F-D3F2-4D1A-8549-5A98517C12F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iMoviesFlix/ViewModels/HomeviewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "getPopularPeopleList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DE2D267F-D3F2-4D1A-8549-5A98517C12F2 - ecba1f0ea783f760"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;iMoviesFlix.People&gt;, Swift.Error&gt;) -&gt; () in iMoviesFlix.HomeviewViewModel.getPopularPeopleList() -&gt; ()"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/ViewModels/HomeviewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "192">
+               </Location>
+               <Location
+                  uuid = "DE2D267F-D3F2-4D1A-8549-5A98517C12F2 - ecba1f0ea783f741"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;iMoviesFlix.People&gt;, Swift.Error&gt;) -&gt; () in iMoviesFlix.HomeviewViewModel.getPopularPeopleList() -&gt; ()"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/ViewModels/HomeviewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "212">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74CC49FC-9DDC-46BA-AD27-72D961211CC0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iMoviesFlix/Managers/ApiCaller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "getPopularPeopleList(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74CC49FC-9DDC-46BA-AD27-72D961211CC0 - 869a66bfc705d3f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in iMoviesFlix.ApiCaller.getPopularPeopleList(completion: (Swift.Result&lt;Swift.Array&lt;iMoviesFlix.People&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/Managers/ApiCaller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "320">
+               </Location>
+               <Location
+                  uuid = "74CC49FC-9DDC-46BA-AD27-72D961211CC0 - 869a66bfc705d3d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in iMoviesFlix.ApiCaller.getPopularPeopleList(completion: (Swift.Result&lt;Swift.Array&lt;iMoviesFlix.People&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "iMoviesFlix"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikhillalam/Desktop/GitHub%20Projects%20/iMoviesFlix/iMoviesFlix/iMoviesFlix/Managers/ApiCaller.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "372">
                </Location>
             </Locations>
          </BreakpointContent>
