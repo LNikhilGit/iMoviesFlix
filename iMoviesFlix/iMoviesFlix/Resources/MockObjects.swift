@@ -23,4 +23,4 @@ var mockKnownFor = [KnownFor(adult:false , backdropPath: "/8ZTVqvKDQ8emSGUEMjsS4
         12
 ], popularity: 99.725, releaseDate: "2010-07-15", video: true, voteAverage: 8.4, voteCount: 35162)]
 
-var mockPeople = [People(adult: false, id: 27205, name: "Nikhil", originalName: "Lalam", mediaType: ResultMediaType.person, popularity: 10.0, gender: 1, knownForDepartment: KnownForDepartment.acting, profilePath: "/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg", knownFor: mockKnownFor)]
+var mockPeople = [People( adult: false, id: 27205, name: "Nikhil", originalName: "Lalam", mediaType: ResultMediaType.person, popularity: 10.0, gender: 1, knownForDepartment: KnownForDepartment.acting, profilePath: "/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg", knownFor: mockKnownFor)]

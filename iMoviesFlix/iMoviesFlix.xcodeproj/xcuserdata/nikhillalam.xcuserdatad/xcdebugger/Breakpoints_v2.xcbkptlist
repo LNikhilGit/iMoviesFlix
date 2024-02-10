@@ -142,8 +142,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
             endingLineNumber = "12"
-            landmarkName = "HomeviewViewModel"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "1CE6E544-685A-4FB4-B7D6-CB3636F09648 - e40ecc09f76d8597"
@@ -430,8 +430,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "getPopularPeopleList()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "DE2D267F-D3F2-4D1A-8549-5A98517C12F2 - ecba1f0ea783f760"
@@ -478,7 +478,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "136"
             endingLineNumber = "136"
-            landmarkName = "getPopularPeopleList(completion:)"
+            landmarkName = "getPopularMovies(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
